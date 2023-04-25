@@ -4,7 +4,7 @@ import ShowDetails from "../ShowDetails/ShowDetails";
 
 const MealDetails = () => {
   const mealDetails = useLoaderData();
-  console.log(mealDetails.meals);
+  //   console.log(mealDetails.meals);
   return (
     <div className="md:grid grid-cols-3 gap-4 w-4/5 mx-auto mt-3">
       {mealDetails.meals.map((meal) => (
