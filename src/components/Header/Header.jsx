@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import ActiveLink from "../ActiveLink/ActiveLink";
 
 const Header = () => {
   return (
-    <nav className=" w-2/4 mx-auto text-white font-bold text-center border- mt-4 bg-cyan-400 p-4">
-      <Link to="/">Home</Link>
-      <Link to="/meals" className="ml-6">
-        Meals
-      </Link>
+    <nav className=" w-4/5 mx-auto text-white font-bold border- mt-4 bg-green-500 p-4 flex gap-8 justify-center rounded">
+      <ActiveLink to="/">Home</ActiveLink>
+      <ActiveLink to="/meals">Meals</ActiveLink>
     </nav>
   );
 };
